@@ -7,10 +7,10 @@ high = 100
 while True:
     
     try:
-        guess = int(input("Enter your Guess:"))
+        guess = int(input("Enter your Guess:\n"))
 
     except ValueError:
-        print("Please Enter Only Valid Number.")
+        print("Please Enter Only Valid Number.\n")
         continue
 
     if guess < low or guess > high:
@@ -31,4 +31,5 @@ while True:
     else:
         print("Guessed Number is correct!")
         print("Attempts Taken To Guess Correctly:", attempts)
+        print("THANK YOU FOR PLAYING!")
         break
